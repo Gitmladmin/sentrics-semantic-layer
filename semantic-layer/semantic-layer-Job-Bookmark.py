@@ -107,7 +107,7 @@ S3bucket_node3 = glueContext.create_dynamic_frame.from_options(
     connection_type="s3",
     format="parquet",
     connection_options={
-        "paths": ["s3://test.processing.for.glue.prod/locations/"],
+        "paths": ["s3://sentrics.sample.data/locations/"],
         "recurse": True,
     },
     transformation_ctx="S3bucket_node3",
@@ -121,7 +121,7 @@ S3bucket_node4 = glueContext.create_dynamic_frame.from_options(
     connection_type="s3",
     format="parquet",
     connection_options={
-        "paths": ["s3://test.processing.for.glue.prod/transformed_location_details/"],
+        "paths": ["s3://sentrics.sample.data/transformed_location_details/"],
         "recurse": True,
     },
     transformation_ctx="S3bucket_node4",
@@ -161,7 +161,7 @@ S3bucket_node5 = glueContext.create_dynamic_frame.from_options(
     connection_type="s3",
     format="parquet",
     connection_options={
-        "paths": ["s3://test.processing.for.glue.prod/sfdc/input/"],
+        "paths": ["s3://sentrics.sample.data/sfdc/input/"],
         "recurse": True,
     },
     transformation_ctx="S3bucket_node5",
@@ -175,7 +175,7 @@ S3bucket_node6 = glueContext.create_dynamic_frame.from_options(
     connection_type="s3",
     format="parquet",
     connection_options={
-        "paths": ["s3://test.processing.for.glue.prod/facilities/"],
+        "paths": ["s3://sentrics.sample.data/facilities/"],
         "recurse": True,
     },
     transformation_ctx="S3bucket_node6",
