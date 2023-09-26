@@ -1,5 +1,5 @@
 {
-  "name" : "semantic-layer-Job-Bookmark",
+  "name" : "semantic-layer-Job-Bookmark-1",
   "description" : "",
   "role" : "arn:aws:iam::412612844236:role/AWS-Glue-Role",
   "executionProperty" : {
@@ -34,6 +34,6 @@
     "provider" : "GITHUB",
     "repository" : "sentrics-semantic-layer",
     "branch" : "development",
-    "folder" : "semantic-layer"
+    "folder" : "semantic-layer1"
   }
 }
