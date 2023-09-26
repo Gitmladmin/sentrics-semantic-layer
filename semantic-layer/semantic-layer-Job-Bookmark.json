@@ -34,6 +34,6 @@
     "provider" : "GITHUB",
     "repository" : "sentrics-semantic-layer",
     "branch" : "development",
-    "folder" : "semantic-layer1"
+    "folder" : "semantic-layer"
   }
 }
