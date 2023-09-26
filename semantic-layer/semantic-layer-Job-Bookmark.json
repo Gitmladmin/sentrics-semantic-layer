@@ -1,3 +1,42 @@
+[{
+  "name" : "semantic-layer-Job-Bookmark",
+  "description" : "",
+  "role" : "arn:aws:iam::412612844236:role/AWS-Glue-Role",
+  "executionProperty" : {
+    "maxConcurrentRuns" : 1
+  },
+  "command" : {
+    "name" : "glueetl",
+    "scriptLocation" : "s3://aws-glue-assets-412612844236-us-east-1/scripts/semantic-layer-Job-Bookmark.py",
+    "pythonVersion" : "3"
+  },
+  "defaultArguments" : {
+    "--enable-metrics" : "true",
+    "--enable-spark-ui" : "true",
+    "--spark-event-logs-path" : "s3://aws-glue-assets-412612844236-us-east-1/sparkHistoryLogs/",
+    "--enable-job-insights" : "false",
+    "--enable-glue-datacatalog" : "true",
+    "--enable-continuous-cloudwatch-log" : "true",
+    "--job-bookmark-option" : "job-bookmark-enable",
+    "--job-language" : "python",
+    "--TempDir" : "s3://aws-glue-assets-412612844236-us-east-1/temporary/",
+    "--enable-auto-scaling" : "true"
+  },
+  "maxRetries" : 1,
+  "allocatedCapacity" : 20,
+  "timeout" : 2880,
+  "maxCapacity" : 20.0,
+  "glueVersion" : "4.0",
+  "numberOfWorkers" : 20,
+  "workerType" : "G.1X",
+  "executionClass" : "STANDARD",
+  "sourceControlDetails" : {
+    "provider" : "GITHUB",
+    "repository" : "sentrics-semantic-layer",
+    "branch" : "development",
+    "folder" : "semantic-layer"
+  }
+},
 {
   "name" : "semantic-layer-Job-Bookmark",
   "description" : "",
@@ -36,4 +75,4 @@
     "branch" : "development",
     "folder" : "semantic-layer"
   }
-}
+}]
