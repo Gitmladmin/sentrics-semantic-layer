@@ -1,5 +1,5 @@
 {
-  "name" : "semantic-layer-Job-Bookmark-1",
+  "name" : "semantic-layer-Job-Bookmark",
   "description" : "",
   "role" : "arn:aws:iam::412612844236:role/AWS-Glue-Role",
   "executionProperty" : {
