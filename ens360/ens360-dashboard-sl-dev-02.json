@@ -1,34 +1,33 @@
 {
   "name" : "ens360-dashboard-sl-dev-02",
   "description" : "",
-  "role" : "arn:aws:iam::745796605184:role/kunaal_test_role",
+  "role" : "arn:aws:iam::412612844236:role/AWS-Glue-Role",
   "executionProperty" : {
     "maxConcurrentRuns" : 1
   },
   "command" : {
     "name" : "glueetl",
-    "scriptLocation" : "s3://aws-glue-assets-745796605184-ap-south-1/sl-dev/scripts/ens360-sl.py",
+    "scriptLocation" : "s3://aws-glue-assets-412612844236-us-east-1/scripts/ens360-sl.py",
     "pythonVersion" : "3"
   },
   "defaultArguments" : {
     "--enable-metrics" : "true",
     "--enable-spark-ui" : "true",
-    "--spark-event-logs-path" : "s3://aws-glue-assets-745796605184-ap-south-1/sparkHistoryLogs/",
+    "--spark-event-logs-path" : "s3://aws-glue-assets-412612844236-us-east-1/sparkHistoryLogs/",
     "--enable-job-insights" : "false",
     "--enable-glue-datacatalog" : "true",
     "--enable-continuous-cloudwatch-log" : "true",
     "--job-bookmark-option" : "job-bookmark-disable",
     "--job-language" : "python",
-    "--TempDir" : "s3://aws-glue-assets-745796605184-ap-south-1/temporary/",
-    "--enable-auto-scaling" : "true"
+    "--TempDir" : "s3://aws-glue-assets-412612844236-us-east-1/temporary/"
   },
   "maxRetries" : 0,
-  "allocatedCapacity" : 200,
+  "allocatedCapacity" : 10,
   "timeout" : 2880,
-  "maxCapacity" : 200.0,
+  "maxCapacity" : 10.0,
   "glueVersion" : "4.0",
-  "numberOfWorkers" : 100,
-  "workerType" : "G.2X",
+  "numberOfWorkers" : 10,
+  "workerType" : "G.1X",
   "executionClass" : "STANDARD",
   "sourceControlDetails" : {
     "provider" : "GITHUB",
